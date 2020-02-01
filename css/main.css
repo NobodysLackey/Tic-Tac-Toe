@@ -19,8 +19,9 @@ section.board {
 }
 
 div {
-    border: 1px solid white;
-    font-size: 8vmin;
+    border: 2px solid white;
+    font-size: 11vmin;
+    font-weight: bold;
     text-align: center;
     vertical-align: middle;
 }

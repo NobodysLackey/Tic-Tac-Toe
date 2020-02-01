@@ -4,20 +4,13 @@
 let player;
 let winner;
 let board;
+let count = 1;
 
 // Variables might include (board/turn/winner)
 
 /*------Cached Element References------*/
-const sq0 = document.getElementById('sq0');
-const sq1 = document.getElementById('sq1');
-const sq2 = document.getElementById('sq2');
-const sq3 = document.getElementById('sq3');
-const sq4 = document.getElementById('sq4');
-const sq5 = document.getElementById('sq5');
-const sq6 = document.getElementById('sq6');
-const sq7 = document.getElementById('sq7');
-const sq8 = document.getElementById('sq8');
 const playAgain = document.getElementById('play');
+const message = document.getElementById('message');
 
 // You might choose to put your game status here
 
@@ -31,38 +24,66 @@ playAgain.addEventListener('click', initialize);
 /*------Functions------*/
 initialize();
 
-function checkWinner() {
-    
-
-}
-
-function click(event) {
-    let square = parseInt(event.target.id.replace('sq', ''));
-    if (
-        board[square] !== 'null')
-        return;
-        checkWinner();
-        playAgain.style.visibility = checkWinner() ? 'visible' : 'hidden';
-        render(square);
-}
-
-function render(square) {
-    
-    
-    
-}
-
-function renderMessage() {
-    
-    
-}
-
-
 function initialize() {
     board = ['null', 'null', 'null', 'null', 'null', 'null', 'null', 'null', 'null'];
 
 
     render();
+}
+
+function checkWinner() {
+    if (board[0]+board[1]+board[2] === 3 ||
+        board[0]+board[3]+board[6] === 3 ||
+        board[0]+board[4]+board[8] === 3 ||
+        board[1]+board[4]+board[7] === 3 ||
+        board[2]+board[4]+board[6] === 3) {
+        board[2]+board[5]+board[8] === 3 ||  
+        board[3]+board[4]+board[5] === 3 ||
+        board[6]+board[7]+board[8] === 3 ||  
+        message.textContent = "X's win!";
+        winner = true;
+    }   
+    if (board[0]+board[1]+board[2] === -3 ||
+        board[0]+board[3]+board[6] === -3 ||
+        board[0]+board[4]+board[8] === -3 ||
+        board[1]+board[4]+board[7] === -3 ||
+        board[2]+board[4]+board[6] === -3) {
+        board[2]+board[5]+board[8] === -3 ||  
+        board[3]+board[4]+board[5] === -3 ||
+        board[6]+board[7]+board[8] === -3 ||  
+        message.textContent = "O's win!";
+        winner = true;
+    }  
+}
+
+function click(event) {
+    let square = parseInt(event.target.id.replace('sq', ''));
+    if (board[square] !== 'null')
+        return;
+    checkWinner();
+    playAgain.style.visibility = checkWinner() ? 'visible' : 'hidden';
+    render(square);
+}
+
+function render(square) {
+    if (winner === false) {
+        markSpot = document.getElementById(`sq${square}`);
+        board[square] = turn;
+        if (turn === 1) {
+            markSpot.textContent = "X";
+            message.textContent = "O's Go!";
+        } else {
+            markSpot.textContent = "O";
+            message.textContent = "X's Go!";
+        }
+    }
+    player *= -1;
+    checkWinner();
+    count = count + 1;
+
+    if (count === 10 && getWinner === false) {
+        message.textContent = "Draw!";
+    }
 }
 
 // Some functions you might choose to use:

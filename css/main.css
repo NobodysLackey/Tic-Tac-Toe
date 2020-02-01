@@ -10,6 +10,10 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 10vmin;
+}
+
 section.board {
     display: grid;
     grid-template-rows: repeat(3, 15vmin);
@@ -27,7 +31,6 @@ div {
 }
 
 div:hover {
-    background-color: white;
     cursor: pointer;
 }
 

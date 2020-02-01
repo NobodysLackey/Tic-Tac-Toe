@@ -1,11 +1,9 @@
 /*------Constants------*/
 
-
-
 /*------Variables (state)------*/
 let player;
 let winner;
-let message;
+let board;
 
 // Variables might include (board/turn/winner)
 
@@ -33,32 +31,38 @@ playAgain.addEventListener('click', initialize);
 /*------Functions------*/
 initialize();
 
-function initialize() {
-
-
-
-
-    render();
-}
-
-function click() {
-
+function checkWinner() {
+    
 
 }
 
-function render() {
+function click(event) {
+    let square = parseInt(event.target.id.replace('sq', ''));
+    if (
+        board[square] !== 'null')
+        return;
+        checkWinner();
+        playAgain.style.visibility = checkWinner() ? 'visible' : 'hidden';
+        render(square);
+}
 
-
+function render(square) {
+    
+    
+    
 }
 
 function renderMessage() {
-
-
+    
+    
 }
 
-function checkWinner() {
+
+function initialize() {
+    board = ['null', 'null', 'null', 'null', 'null', 'null', 'null', 'null', 'null'];
 
 
+    render();
 }
 
 // Some functions you might choose to use:

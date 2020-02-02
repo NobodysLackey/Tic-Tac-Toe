@@ -44,6 +44,7 @@ function checkWinner() {
         board[3]+board[4]+board[5] === 3 || 
         board[6]+board[7]+board[8] === 3){
         message.textContent = "X'S WIN!";
+        message.style.color = "rgba(255, 217, 223, 0.913)";
         message.classList.add('animated', 'pulse', 'infinite', 'fast');
         winner = true;
         playAgain.classList.add('animated', 'jello', 'fast');
@@ -57,6 +58,7 @@ function checkWinner() {
         board[3]+board[4]+board[5] === -3 || 
         board[6]+board[7]+board[8] === -3){
         message.textContent = "O'S WIN!";
+        message.style.color = "rgba(198, 224, 255, 0.913)";
         message.classList.add('animated', 'pulse', 'infinite', 'fast');
         winner = true;
         playAgain.classList.add('animated', 'jello', 'fast');
@@ -69,10 +71,12 @@ function render(square) {
         board[square] = player;
         if (player === 1) {
             markSpot.textContent = "X";
+            markSpot.style.color = "rgba(255, 217, 223, 0.913)";
             message.textContent = "O'S GO!";
             message.classList.remove('animated', 'pulse', 'infinite', 'fast');
         } else {
             markSpot.textContent = "O";
+            markSpot.style.color = "rgba(198, 224, 255, 0.913)";
             message.textContent = "X'S GO!";
         }
     }
@@ -82,6 +86,7 @@ function render(square) {
     if (count === 10 && winner === false) {
     message.textContent = "DRAW!";
     message.classList.add('animated', 'pulse', 'infinite', 'fast');
+    playAgain.classList.add('animated', 'jello', 'fast');
     }
     playAgain.style.visibility = gameOver() ? 'visible' : 'hidden';
 }

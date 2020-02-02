@@ -1,5 +1,4 @@
 # **Tic-Tac-Toe**
-***
 
 ## Project 1: Software Engineering Immersive 
 ### Date: 1/31/2020
@@ -9,7 +8,7 @@
 
 ### ***Description***
 
->  ##### A simple tic-tac-toe game with conditions for win/lose/draw as well as a play again button that only appears when the game has ended.
+>  ##### A simple tic-tac-toe game with conditions for win/lose/draw.
 ***
 
 ### ***Features***

@@ -41,52 +41,52 @@ div:hover {
 }
 
 #sq0 {
-    border-right: 3px solid rgba(255, 254, 234, 0.913);
-    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+    border-right: 5px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq1 {
-    border-right: 3px solid rgba(255, 254, 234, 0.913);
-    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
-    border-left: 3px solid rgba(255, 254, 234, 0.913);
+    border-right: 5px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 5px solid rgba(255, 254, 234, 0.913);
+    border-left: 5px solid rgba(255, 254, 234, 0.913);
 
 }
 
 #sq2 {
-    border-left: 3px solid rgba(255, 254, 234, 0.913);
-    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+    border-left: 5px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq3 {
-    border-top: 3px solid rgba(255, 254, 234, 0.913);
-    border-right: 3px solid rgba(255, 254, 234, 0.913);
-    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+    border-top: 5px solid rgba(255, 254, 234, 0.913);
+    border-right: 5px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq4 {
-    border: 3px solid rgba(255, 254, 234, 0.913);
+    border: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq5 {
-    border-top: 3px solid rgba(255, 254, 234, 0.913);
-    border-left: 3px solid rgba(255, 254, 234, 0.913);
-    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+    border-top: 5px solid rgba(255, 254, 234, 0.913);
+    border-left: 5px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq6 {
-    border-top: 3px solid rgba(255, 254, 234, 0.913);
-    border-right: 3px solid rgba(255, 254, 234, 0.913);
+    border-top: 5px solid rgba(255, 254, 234, 0.913);
+    border-right: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq7 {
-    border-right: 3px solid rgba(255, 254, 234, 0.913);
-    border-left: 3px solid rgba(255, 254, 234, 0.913);
-    border-top: 3px solid rgba(255, 254, 234, 0.913);
+    border-right: 5px solid rgba(255, 254, 234, 0.913);
+    border-left: 5px solid rgba(255, 254, 234, 0.913);
+    border-top: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq8 {
-    border-top: 3px solid rgba(255, 254, 234, 0.913);
-    border-left: 3px solid rgba(255, 254, 234, 0.913);
+    border-top: 5px solid rgba(255, 254, 234, 0.913);
+    border-left: 5px solid rgba(255, 254, 234, 0.913);
 }
 
 button {

@@ -15,6 +15,7 @@
 ### ***Features***
 
 > * ##### Message section that describes whose turn it is and a win/lose/draw update
+> * ##### Unique color for each player
 > * ##### JS Animations
 > * ##### Self-hosted font
 > * ##### Play Again button that only appears when the game has ended

@@ -12,10 +12,13 @@ const message = document.getElementById('message');
 document.querySelector('section.board').addEventListener('click', click);
 
 /*------Functions------*/
+init();
+
 function init() {
     board = ['', '', '', '', '', '', '', '', ''];
     player = 1;
-    message.textContent = "X's Go First!";
+    message.textContent = "X'S GO FIRST!";
+    message.classList.add('animated', 'pulse', 'infinite', 'fast');
     playAgain.style.visibility = 'hidden';
 }
 
@@ -40,8 +43,10 @@ function checkWinner() {
         board[2]+board[5]+board[8] === 3 || 
         board[3]+board[4]+board[5] === 3 || 
         board[6]+board[7]+board[8] === 3){
-        message.textContent = "X's win!";
+        message.textContent = "X'S WIN!";
+        message.classList.add('animated', 'pulse', 'infinite', 'fast');
         winner = true;
+        playAgain.classList.add('animated', 'jello', 'fast');
     }   
     if (board[0]+board[1]+board[2] === -3 || 
         board[0]+board[3]+board[6] === -3 || 
@@ -51,8 +56,10 @@ function checkWinner() {
         board[2]+board[5]+board[8] === -3 || 
         board[3]+board[4]+board[5] === -3 || 
         board[6]+board[7]+board[8] === -3){
-        message.textContent = "O's win!";
+        message.textContent = "O'S WIN!";
+        message.classList.add('animated', 'pulse', 'infinite', 'fast');
         winner = true;
+        playAgain.classList.add('animated', 'jello', 'fast');
     }
 }
     
@@ -62,19 +69,19 @@ function render(square) {
         board[square] = player;
         if (player === 1) {
             markSpot.textContent = "X";
-            message.textContent = "O's Go!";
+            message.textContent = "O'S GO!";
+            message.classList.remove('animated', 'pulse', 'infinite', 'fast');
         } else {
             markSpot.textContent = "O";
-            message.textContent = "X's Go!";
+            message.textContent = "X'S GO!";
         }
     }
     player *= -1;
     checkWinner();
     count++;
     if (count === 10 && winner === false) {
-    message.textContent = "Draw!";
+    message.textContent = "DRAW!";
+    message.classList.add('animated', 'pulse', 'infinite', 'fast');
     }
     playAgain.style.visibility = gameOver() ? 'visible' : 'hidden';
 }
-
-init();

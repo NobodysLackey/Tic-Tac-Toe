@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'right_chalkregular';
+    src: url('fonts/right_chalk-webfont.woff2') format('woff2'),
+         url('fonts/right_chalk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -5,26 +13,24 @@ body {
     background-image: url(https://i.imgur.com/YPjxq48.jpg);
     background-size: cover;
     text-align: center;
-    color: white;
-    font-family: 'Amatic SC', cursive;
+    color: rgba(255, 254, 234, 0.913);
+    font-family: 'right_chalkregular', serif;
     align-items: center;
 }
 
 h1 {
-    font-size: 10vmin;
+    font-size: 8vmin;
 }
 
 section.board {
     display: grid;
-    grid-template-rows: repeat(3, 15vmin);
-    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3, 18vmin);
+    grid-template-columns: repeat(3, 18vmin);
     grid-gap: 0vmin;
-    
 }
 
 div {
-    border: 2px solid white;
-    font-size: 11vmin;
+    font-size: 14vmin;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
@@ -34,16 +40,67 @@ div:hover {
     cursor: pointer;
 }
 
+#sq0 {
+    border-right: 3px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq1 {
+    border-right: 3px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+    border-left: 3px solid rgba(255, 254, 234, 0.913);
+
+}
+
+#sq2 {
+    border-left: 3px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq3 {
+    border-top: 3px solid rgba(255, 254, 234, 0.913);
+    border-right: 3px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq4 {
+    border: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq5 {
+    border-top: 3px solid rgba(255, 254, 234, 0.913);
+    border-left: 3px solid rgba(255, 254, 234, 0.913);
+    border-bottom: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq6 {
+    border-top: 3px solid rgba(255, 254, 234, 0.913);
+    border-right: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq7 {
+    border-right: 3px solid rgba(255, 254, 234, 0.913);
+    border-left: 3px solid rgba(255, 254, 234, 0.913);
+    border-top: 3px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq8 {
+    border-top: 3px solid rgba(255, 254, 234, 0.913);
+    border-left: 3px solid rgba(255, 254, 234, 0.913);
+}
+
 button {
     background-color: rgb(30, 33, 33, 0);
-    color: white;
-    font-family: 'Amatic SC', cursive;
+    color: rgba(255, 254, 234, 0.913);
+    font-family: 'right_chalkregular', serif;
     font-size: 3vmin;
     outline: none;
+    border: 2px solid rgba(255, 254, 234, 0.913);
+    border-radius: 1vmin;
 }
 
 button:hover {
-    background-color: white;
+    background-color: rgba(255, 254, 234, 0.913);
     color: rgb(30, 33, 33);
     cursor: pointer;
 }

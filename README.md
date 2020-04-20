@@ -45,8 +45,8 @@
 ### ***Credits***
 
 ##### Background: [Chalkboard](https://researchprojectbenjervis.files.wordpress.com/2015/02/llk_chalkboard-background.jpg)
->
-> ##### Font: [Right Chalk](https://www.dafont.com/right-chalk.font)
->  
-> ##### Animations: [Animate.css](https://daneden.github.io/animate.css/)
+
+##### Font: [Right Chalk](https://www.dafont.com/right-chalk.font)
+
+##### Animations: [Animate.css](https://daneden.github.io/animate.css/)
 ***

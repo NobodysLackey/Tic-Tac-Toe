@@ -1,4 +1,4 @@
-# **Tic-Tac-Toe**
+![Tic-Tac-Toe](images/banner.png)
 
 ### Date: 1/31/2020
 

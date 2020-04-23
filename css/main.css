@@ -20,6 +20,12 @@ body {
 
 h1 {
     font-size: 8vmin;
+    font-weight: normal;
+}
+
+#message {
+    font-size: 3vmin;
+    font-weight: normal;
 }
 
 section.board {
@@ -31,7 +37,6 @@ section.board {
 
 div {
     font-size: 13vmin;
-    font-weight: bold;
     text-align: center;
     vertical-align: middle;
 }
@@ -94,6 +99,7 @@ button {
     color: rgba(255, 254, 234, 0.913);
     font-family: 'right_chalkregular', serif;
     font-size: 3vmin;
+    font-weight: normal;
     outline: none;
     border: 2px solid rgba(255, 254, 234, 0.913);
     border-radius: 1vmin;

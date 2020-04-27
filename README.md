@@ -12,10 +12,7 @@
 ***
 
 ### ***Technologies Used***
-
-* ##### HTML
-* ##### CSS
-* ##### JavaScript
+![Technologies Used](images/tech-banner.png)
 ***
 
 ### ***Getting Started***

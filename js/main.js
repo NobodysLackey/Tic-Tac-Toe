@@ -10,6 +10,7 @@ const message = document.getElementById('message');
 
 /*------Event Listeners------*/
 document.querySelector('section.board').addEventListener('click', click);
+playAgain.addEventListener('click', init);
 
 /*------Functions------*/
 init();
@@ -20,6 +21,16 @@ function init() {
     message.textContent = "X'S GO FIRST!";
     message.classList.add('animated', 'pulse', 'infinite', 'fast');
     playAgain.style.visibility = 'hidden';
+
+    allSquares = document.querySelectorAll('section.board')[0].childNodes
+
+    allSquares.forEach((element) => {
+        element.textContent = ""
+        element.color = ""
+    })
+
+    count = 1;
+    winner = false;
 }
 
 function gameOver() {

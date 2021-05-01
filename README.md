@@ -3,7 +3,7 @@
 ### Date: 1/31/2020
 
 #### By: Michael Lackey
-#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [GA Profile](https://profiles.generalassemb.ly/michaellackey)
+#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/)
 ***
 
 ### ***Description***
@@ -17,7 +17,7 @@
 
 ### ***Getting Started***
 
-##### Start by deciding who goes first.  The objective is to acheive 3 in a row, while preventing your opponent from doing the same.
+##### Start by deciding who goes first.  The objective is to achieve 3 in a row, while preventing your opponent from doing the same.
 ##### The project was deployed on GitHub Pages and can be viewed [here](https://mlackey9601.github.io/Tic-Tac-Toe/).
 ***
 
@@ -34,7 +34,7 @@
 - [x] ~~JS Animations~~
 - [x] ~~Self-hosted chalk font~~
 - [x] ~~Play Again button that only appears when the game has ended~~
-- [ ] Play Again button does not "refresh" the page
+- [x] ~~Play Again button does not "refresh" the page~~
 - [ ] Win counter for each player
 - [ ] 30 second turn timer before a random selection is made for the player
 ***

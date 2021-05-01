@@ -3,7 +3,11 @@
 ### Date: 1/31/2020
 
 #### By: Michael Lackey
+<<<<<<< HEAD
 #### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/)
+=======
+#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
+>>>>>>> 1035e30e09ae081f888630ee9f45eda19d3c598a
 ***
 
 ### ***Description***

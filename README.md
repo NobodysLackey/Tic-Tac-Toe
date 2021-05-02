@@ -18,7 +18,7 @@
 ### ***Getting Started***
 
 ##### Start by deciding who goes first.  The objective is to achieve 3 in a row, while preventing your opponent from doing the same.
-##### The project was deployed on GitHub Pages and can be viewed [here](https://mlackey9601.github.io/Tic-Tac-Toe/).
+##### The project was deployed on Surge and can be viewed [here](https://chalk-tac-toe.surge.sh).
 ***
 
 ### ***Screenshots***
@@ -36,6 +36,7 @@
 - [x] ~~Play Again button that only appears when the game has ended~~
 - [x] ~~Play Again button does not "refresh" the page~~
 - [x] ~~Win counter for each player~~
+- [x] ~~Deploy to Surge~~
 - [ ] 30 second turn timer before a random selection is made for the player
 - [ ] 1 Player Mode where a user can play against the computer
 ***

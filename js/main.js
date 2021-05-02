@@ -33,6 +33,9 @@ function init() {
   message.style.color = 'rgba(255, 254, 234, 0.913)'
   playAgain.style.visibility = 'hidden'
   playAgain.classList.remove('animated', 'jello', 'fast')
+  x.classList.remove('animated', 'bounce', 'fast')
+  o.classList.remove('animated', 'bounce', 'fast')
+  d.classList.remove('animated', 'bounce', 'fast')
 
   document
     .querySelectorAll('section.board')[0]
@@ -74,6 +77,7 @@ function checkWinner() {
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
       winner = true
       xWin++
+      x.classList.add('animated', 'bounce', 'fast')
       x.innerText = xWin
     }
     if (
@@ -92,6 +96,7 @@ function checkWinner() {
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
       winner = true
       oWin++
+      o.classList.add('animated', 'bounce', 'fast')
       o.innerText = oWin
     }
   }
@@ -119,6 +124,7 @@ function render(square) {
   if (count === 10 && winner === false) {
     playAgain.classList.add('animated', 'jello', 'fast')
     dWin++
+    d.classList.add('animated', 'bounce', 'fast')
     d.innerText = dWin
     message.textContent = 'DRAW!'
     message.style.color = 'rgba(255, 217, 223, 0.913)'

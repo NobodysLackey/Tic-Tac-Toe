@@ -23,7 +23,6 @@
 
 ### ***Screenshots***
 
-###### Tic-Tac-Toe
 ![Tic-Tac-Toe](images/screenshot.png)
 ***
 

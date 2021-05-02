@@ -37,6 +37,7 @@
 - [x] ~~Play Again button does not "refresh" the page~~
 - [ ] Win counter for each player
 - [ ] 30 second turn timer before a random selection is made for the player
+- [ ] 1 Player Mode where a user can play against the computer
 ***
 
 ### ***Credits***

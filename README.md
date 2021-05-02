@@ -8,7 +8,7 @@
 
 ### ***Description***
 
-##### A simple tic-tac-toe game built with VanillaJS with conditions for win/lose/draw. This project was built over the course of two days.
+##### A simple tic-tac-toe game built with VanillaJS with conditions for win/lose/draw. This project was built over the course of two days as a project for the General Assembly Software Engineering Immersive.
 ***
 
 ### ***Technologies Used***

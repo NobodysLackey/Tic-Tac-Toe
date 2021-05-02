@@ -8,7 +8,7 @@
 
 ### ***Description***
 
-##### A simple tic-tac-toe game built with VanillaJS with conditions for win/lose/draw. This project was built over the course of two days for the General Assembly - Software Engineering Immersive.
+##### A simple tic-tac-toe game built in VanillaJS with conditions for win/lose/draw. This project was built over the course of two days for the General Assembly - Software Engineering Immersive.
 ***
 
 ### ***Technologies Used***
@@ -46,5 +46,5 @@
 
 ##### Font: [Right Chalk](https://www.dafont.com/right-chalk.font)
 
-##### Animations: [Animate.css](https://daneden.github.io/animate.css/)
+##### Animations: [Animate.css](https://www.youjiadain.com/)
 ***

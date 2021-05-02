@@ -32,6 +32,7 @@ function init() {
   message.classList.add('animated', 'pulse', 'infinite', 'fast')
   message.style.color = 'rgba(255, 254, 234, 0.913)'
   playAgain.style.visibility = 'hidden'
+  playAgain.classList.remove('animated', 'jello', 'fast')
 
   document
     .querySelectorAll('section.board')[0]
@@ -67,13 +68,13 @@ function checkWinner() {
       board[3] + board[4] + board[5] === 3 ||
       board[6] + board[7] + board[8] === 3
     ) {
+      playAgain.classList.add('animated', 'jello', 'fast')
       message.textContent = "X'S WIN!"
       message.style.color = 'rgba(223, 254, 215, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
       winner = true
       xWin++
       x.innerText = xWin
-      playAgain.classList.add('animated', 'jello', 'fast')
     }
     if (
       board[0] + board[1] + board[2] === -3 ||
@@ -85,13 +86,13 @@ function checkWinner() {
       board[3] + board[4] + board[5] === -3 ||
       board[6] + board[7] + board[8] === -3
     ) {
+      playAgain.classList.add('animated', 'jello', 'fast')
       message.textContent = "O'S WIN!"
       message.style.color = 'rgba(198, 224, 255, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
       winner = true
       oWin++
       o.innerText = oWin
-      playAgain.classList.add('animated', 'jello', 'fast')
     }
   }
 }
@@ -116,12 +117,12 @@ function render(square) {
   checkWinner()
   count++
   if (count === 10 && winner === false) {
+    playAgain.classList.add('animated', 'jello', 'fast')
     dWin++
     d.innerText = dWin
     message.textContent = 'DRAW!'
     message.style.color = 'rgba(255, 217, 223, 0.913)'
     message.classList.add('animated', 'pulse', 'infinite', 'fast')
-    playAgain.classList.add('animated', 'jello', 'fast')
   }
   playAgain.style.visibility = gameOver() ? 'visible' : 'hidden'
 }

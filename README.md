@@ -8,7 +8,7 @@
 
 ### ***Description***
 
-##### A simple tic-tac-toe game built with VanillaJS with conditions for win/lose/draw. This project was built over the course of two days as a project for the General Assembly Software Engineering Immersive.
+##### A simple tic-tac-toe game built with VanillaJS with conditions for win/lose/draw. This project was built over the course of two days for the General Assembly - Software Engineering Immersive.
 ***
 
 ### ***Technologies Used***
@@ -35,7 +35,7 @@
 - [x] ~~Self-hosted chalk font~~
 - [x] ~~Play Again button that only appears when the game has ended~~
 - [x] ~~Play Again button does not "refresh" the page~~
-- [ ] Win counter for each player
+- [x] ~~Win counter for each player~~
 - [ ] 30 second turn timer before a random selection is made for the player
 - [ ] 1 Player Mode where a user can play against the computer
 ***

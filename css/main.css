@@ -11,11 +11,29 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-image: url("../images/chalkboard.jpg");
     background-size: cover;
     text-align: center;
     color: rgba(255, 254, 234, 0.913);
     font-family: 'right_chalkregular', serif;
+}
+
+.title {
+    margin: 0;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -36,14 +54,41 @@ section.board {
     grid-gap: 0vmin;
 }
 
-div {
+.square {
     font-size: 13vmin;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
-div:hover {
-    cursor: pointer;
+#score {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 20vw;
+    font-size: 3vmin;
+    margin-bottom: 25vh;
+}
+
+#X {
+    color: rgba(223, 254, 215, 0.913);
+    font-size: 4vmin;
+    border-bottom: solid 2px rgba(255, 254, 234, 0.913);
+    margin-bottom: 1.5vh;
+}
+
+#O {
+    color: rgba(198, 224, 255, 0.913);
+    font-size: 4vmin;
+    border-bottom: solid 2px rgba(255, 254, 234, 0.913);
+    margin-bottom: 1.5vh;
+}
+
+#D {
+    color: rgba(255, 217, 223, 0.913);
+    font-size: 4vmin;
+    border-bottom: solid 2px rgba(255, 254, 234, 0.913);
+    margin-bottom: 1.5vh;
 }
 
 #sq0 {

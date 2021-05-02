@@ -31,22 +31,31 @@
     <title>TIC-TAC-TOE</title>
   </head>
   <body>
-    <h1 class="animated rubberBand delay-1s">TIC-TAC-TOE</h1>
-    <h2 id="message"></h2>
-    ``
-    <br />
-    <section class="board">
-      <div id="sq0"></div>
-      <div id="sq1"></div>
-      <div id="sq2"></div>
-      <div id="sq3"></div>
-      <div id="sq4"></div>
-      <div id="sq5"></div>
-      <div id="sq6"></div>
-      <div id="sq7"></div>
-      <div id="sq8"></div>
-    </section>
-    <br />
-    <button id="play">PLAY AGAIN?</button>
+    <h1 class="animated rubberBand delay-1s title">TIC-TAC-TOE</h1>
+    <div class="game">
+      <section class="board">
+        <div class="square" id="sq0"></div>
+        <div class="square" id="sq1"></div>
+        <div class="square" id="sq2"></div>
+        <div class="square" id="sq3"></div>
+        <div class="square" id="sq4"></div>
+        <div class="square" id="sq5"></div>
+        <div class="square" id="sq6"></div>
+        <div class="square" id="sq7"></div>
+        <div class="square" id="sq8"></div>
+      </section>
+      <section class="panel">
+        <h2 id="message"></h2>
+        <span id="score">
+          <div id="X">X</div>
+          <div id="O">O</div>
+          <div id="D">D</div>
+          <div id="Xscore"></div>
+          <div id="Oscore"></div>
+          <div id="Dscore"></div>
+        </span>
+        <button id="play">PLAY AGAIN?</button>
+      </section>
+    </div>
   </body>
 </html>

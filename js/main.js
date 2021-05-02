@@ -20,11 +20,10 @@ function init() {
   player = 1
   message.textContent = "X'S GO FIRST!"
   message.classList.add('animated', 'pulse', 'infinite', 'fast')
+  message.style.color = 'rgba(255, 254, 234, 0.913)'
   playAgain.style.visibility = 'hidden'
 
-  allSquares = document.querySelectorAll('section.board')[0].childNodes
-
-  allSquares.forEach((element) => {
+  document.querySelectorAll('section.board')[0].childNodes.forEach((element) => {
     element.textContent = ''
     element.color = ''
   })
@@ -82,6 +81,7 @@ function checkWinner() {
 function render(square) {
   if (winner === false) {
     markSpot = document.getElementById(`sq${square}`)
+    console.log(markSpot)
     board[square] = player
     if (player === 1) {
       markSpot.textContent = 'X'

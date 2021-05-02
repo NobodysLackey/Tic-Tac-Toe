@@ -45,6 +45,7 @@ h1 {
 #message {
     font-size: 3vmin;
     font-weight: normal;
+    margin-bottom: 12vh;
 }
 
 section.board {
@@ -67,7 +68,6 @@ section.board {
     grid-template-columns: 1fr 1fr 1fr;
     width: 20vw;
     font-size: 3vmin;
-    margin-bottom: 25vh;
 }
 
 #X {

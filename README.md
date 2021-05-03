@@ -36,7 +36,7 @@
 - [x] ~~Play Again button does not "refresh" the page~~
 - [x] ~~Win counter for each player~~
 - [x] ~~Deploy to Surge~~
-- [x] 10 second turn timer before a random selection is made for the player
+- [x] ~~10 second turn timer before a random selection is made for the player~~
 - [ ] 1 Player Mode where a user can play against the computer
 ***
 

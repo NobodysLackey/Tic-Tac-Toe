@@ -2,7 +2,7 @@
     font-family: 'right_chalkregular';
     src: url('fonts/right_chalk-webfont.woff2') format('woff2'),
          url('fonts/right_chalk-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 
@@ -22,6 +22,21 @@ body {
 
 .title {
     margin: 0;
+}
+
+.hide-timer {
+    color: rgba(255, 254, 234, 0);
+    font-size: 6vmin;
+}
+
+.show-timer {
+    color: rgba(255, 254, 234, 0.913);
+    font-size: 6vmin;
+}
+
+.red-timer {
+    color: rgba(255, 217, 223, 0.913);
+    font-size: 6vmin;
 }
 
 .game {
@@ -45,7 +60,12 @@ h1 {
 #message {
     font-size: 3vmin;
     font-weight: normal;
-    margin-bottom: 12vh;
+    margin-bottom: 3vh;
+}
+
+#time {
+    font-size: 5vmin;
+    margin-bottom: 3vh;
 }
 
 section.board {

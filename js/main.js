@@ -1,5 +1,6 @@
 /*------Variables (state)------*/
 let player
+let goFirst = -1
 let board
 let timeoutID
 let time
@@ -63,11 +64,18 @@ function runTimer() {
 
 function init() {
   board = ['', '', '', '', '', '', '', '', '']
-  player = 1
+  goFirst *= -1
+  player = goFirst
   x.innerText = xWin
   o.innerText = oWin
   d.innerText = dWin
-  message.textContent = "X'S GO FIRST!"
+
+  if (goFirst === 1) {
+    message.textContent = "X'S GO FIRST!"
+  } else {
+    message.textContent = "O'S GO FIRST!"
+  }
+
   message.classList.add('animated', 'pulse', 'infinite', 'fast')
   message.style.color = 'rgba(255, 254, 234, 0.913)'
   playAgain.style.visibility = 'hidden'

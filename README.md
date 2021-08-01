@@ -37,6 +37,7 @@
 - [x] ~~Win counter for each player~~
 - [x] ~~Deploy to Surge~~
 - [x] ~~10 second turn timer before a random selection is made for the player~~
+- [x] ~~Game alternates who goes first between X and O~~
 - [ ] 1 Player Mode where a user can play against the computer
 ***
 

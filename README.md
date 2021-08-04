@@ -8,7 +8,7 @@
 
 ### ***Description***
 
-##### A simple tic-tac-toe game built in VanillaJS with conditions for win/lose/draw. This project was built over the course of two days for the General Assembly - Software Engineering Immersive.
+##### A simple tic-tac-toe game built with vanilla JavaScript with conditions for win/lose/draw. This project was built over the course of two days for the General Assembly - Software Engineering Immersive.
 ***
 
 ### ***Technologies Used***
@@ -38,6 +38,8 @@
 - [x] ~~Deploy to Surge~~
 - [x] ~~10 second turn timer before a random selection is made for the player~~
 - [x] ~~Game alternates who goes first between X and O~~
+- [ ] Let the user choose which letter goes first
+- [ ] On win, the winning cells light up, while the others grey out
 - [ ] 1 Player Mode where a user can play against the computer
 ***
 

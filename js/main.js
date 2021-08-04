@@ -26,7 +26,7 @@ playAgain.addEventListener('click', init)
 /*------Functions------*/
 init()
 
-function clear() {
+const clear = () => {
   clearTimeout(timeoutID)
   timer.classList.remove(
     'animated',
@@ -39,7 +39,7 @@ function clear() {
   timer.innerHTML = time
 }
 
-function runTimer() {
+const runTimer = () => {
   if (count === 9) {
     return
   }
@@ -62,7 +62,7 @@ function runTimer() {
   }
 }
 
-function init() {
+const init = () => {
   board = ['', '', '', '', '', '', '', '', '']
   goFirst *= -1
   player = goFirst
@@ -96,12 +96,12 @@ function init() {
   winner = false
 }
 
-function gameOver() {
+const gameOver = () => {
   clear()
   return (count === 9 && winner === false) || winner === true
 }
 
-function click(event) {
+const click = (event) => {
   clearTimeout(timeoutID)
   let square = parseInt(event.target.id.replace('sq', ''))
   if (board[square] !== '') return
@@ -117,7 +117,7 @@ function click(event) {
   }
 }
 
-function randomClick() {
+const randomClick = () => {
   clearTimeout(timeoutID)
   let square = Math.floor(Math.random() * 10)
   if (board[square] !== '') {
@@ -136,7 +136,7 @@ function randomClick() {
   }
 }
 
-function checkWinner() {
+const checkWinner = () => {
   if (winner === false) {
     if (
       board[0] + board[1] + board[2] === 3 ||
@@ -181,7 +181,7 @@ function checkWinner() {
   }
 }
 
-function render(square) {
+const render = (square) => {
   if (winner === false) {
     markSpot = document.getElementById(`sq${square}`)
     board[square] = player

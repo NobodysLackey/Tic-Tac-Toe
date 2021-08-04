@@ -26,7 +26,7 @@ playAgain.addEventListener('click', init)
 /*------Functions------*/
 init()
 
-const clear = () => {
+function clear() {
   clearTimeout(timeoutID)
   timer.classList.remove(
     'animated',
@@ -39,7 +39,7 @@ const clear = () => {
   timer.innerHTML = time
 }
 
-const runTimer = () => {
+function runTimer() {
   if (count === 9) {
     return
   }
@@ -62,7 +62,7 @@ const runTimer = () => {
   }
 }
 
-const init = () => {
+function init() {
   board = ['', '', '', '', '', '', '', '', '']
   goFirst *= -1
   player = goFirst
@@ -96,12 +96,12 @@ const init = () => {
   winner = false
 }
 
-const gameOver = () => {
+function gameOver() {
   clear()
   return (count === 9 && winner === false) || winner === true
 }
 
-const click = (event) => {
+function click(event) {
   clearTimeout(timeoutID)
   let square = parseInt(event.target.id.replace('sq', ''))
   if (board[square] !== '') return
@@ -117,7 +117,7 @@ const click = (event) => {
   }
 }
 
-const randomClick = () => {
+function randomClick() {
   clearTimeout(timeoutID)
   let square = Math.floor(Math.random() * 10)
   if (board[square] !== '') {
@@ -136,7 +136,7 @@ const randomClick = () => {
   }
 }
 
-const checkWinner = () => {
+function checkWinner() {
   if (winner === false) {
     if (
       board[0] + board[1] + board[2] === 3 ||
@@ -153,6 +153,8 @@ const checkWinner = () => {
       message.textContent = "X'S WIN!"
       message.style.color = 'rgba(223, 254, 215, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
+      timer.classList.remove('hide-timer')
+      timer.classList.add('show-timer')
       winner = true
       xWin++
       x.classList.add('animated', 'bounce', 'fast')
@@ -173,6 +175,8 @@ const checkWinner = () => {
       message.textContent = "O'S WIN!"
       message.style.color = 'rgba(198, 224, 255, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
+      timer.classList.remove('hide-timer')
+      timer.classList.add('show-timer')
       winner = true
       oWin++
       o.classList.add('animated', 'bounce', 'fast')
@@ -181,7 +185,7 @@ const checkWinner = () => {
   }
 }
 
-const render = (square) => {
+function render(square) {
   if (winner === false) {
     markSpot = document.getElementById(`sq${square}`)
     board[square] = player
@@ -208,6 +212,8 @@ const render = (square) => {
     message.textContent = 'DRAW!'
     message.style.color = 'rgba(255, 217, 223, 0.913)'
     message.classList.add('animated', 'pulse', 'infinite', 'fast')
+    timer.classList.remove('hide-timer')
+    timer.classList.add('show-timer')
   }
   playAgain.style.visibility = gameOver() ? 'visible' : 'hidden'
 }

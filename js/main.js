@@ -153,8 +153,6 @@ function checkWinner() {
       message.textContent = "X'S WIN!"
       message.style.color = 'rgba(223, 254, 215, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
-      timer.classList.remove('hide-timer')
-      timer.classList.add('show-timer')
       winner = true
       xWin++
       x.classList.add('animated', 'bounce', 'fast')
@@ -175,8 +173,6 @@ function checkWinner() {
       message.textContent = "O'S WIN!"
       message.style.color = 'rgba(198, 224, 255, 0.913)'
       message.classList.add('animated', 'pulse', 'infinite', 'fast')
-      timer.classList.remove('hide-timer')
-      timer.classList.add('show-timer')
       winner = true
       oWin++
       o.classList.add('animated', 'bounce', 'fast')
@@ -212,8 +208,6 @@ function render(square) {
     message.textContent = 'DRAW!'
     message.style.color = 'rgba(255, 217, 223, 0.913)'
     message.classList.add('animated', 'pulse', 'infinite', 'fast')
-    timer.classList.remove('hide-timer')
-    timer.classList.add('show-timer')
   }
   playAgain.style.visibility = gameOver() ? 'visible' : 'hidden'
 }
